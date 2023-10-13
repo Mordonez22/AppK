@@ -147,7 +147,7 @@ class MediosActivity : AppCompatActivity() {
         mediaPlayer10.release()
     }
     private fun navigateToEjercioS(){
-        val intent = Intent(this, meFamiliaActivity::class.java)
+        val intent = Intent(this, MeMedioActivity::class.java)
         startActivity(intent)
     }
 }
