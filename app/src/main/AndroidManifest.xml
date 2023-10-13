@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppK"
         tools:targetApi="31">
         <activity
+            android:name=".firstP.profesionesActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstP.auMedioActivity"
             android:exported="false" />
         <activity

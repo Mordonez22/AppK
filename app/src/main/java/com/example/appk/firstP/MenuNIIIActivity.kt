@@ -31,7 +31,7 @@ class MenuNIIIActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun navigateToNaturaleza(){
-        val intent = Intent(this, NaturalezaActivity::class.java)
+        val intent = Intent(this, profesionesActivity::class.java)
         startActivity(intent)
     }
     private fun navigateToDias(){
