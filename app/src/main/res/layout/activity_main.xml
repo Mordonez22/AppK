@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="600dp"
+            android:layout_height="150dp"
+            android:src="@raw/q"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APRENDAMOS KAQCHIKEL"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="80dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNivel1"
+        android:text="NIVEL 1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/boton_r"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNivel2"
+        android:text="NIVEL 2"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/boton_r"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNivel3"
+        android:text="NIVEL 3"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/boton_r"></Button>
+
+
+</LinearLayout>

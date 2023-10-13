@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".firstP.numerosActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="600dp"
+                android:layout_height="150dp"
+                android:src="@raw/numeros"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+
+            android:gravity="center_horizontal"/>
+
+        <!-- Tabla con 2 filas y 3 columnas -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- Fila 1 -->
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+
+            <!-- Fila 2 -->
+            <TableRow>
+                <!-- Columna 1 (Texto 3) -->
+                <TextView
+                    android:id="@+id/txtS3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 3"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 4) -->
+                <TextView
+                    android:id="@+id/txtS4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 4"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 2) -->
+                <ImageButton
+                    android:id="@+id/btnA2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 2"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off"/>
+            </TableRow>
+
+            <!-- Fila 3 -->
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 5"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 6"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 3"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 7"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 8"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 3"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 9"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 10"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 3"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 11"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 12"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 3"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 13"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 14"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 7"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 15"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 16"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 8"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 17"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 18"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 9"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 5) -->
+                <TextView
+                    android:id="@+id/txtS19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 19"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 6) -->
+                <TextView
+                    android:id="@+id/txtS20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 20"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 3) -->
+                <ImageButton
+                    android:id="@+id/btnA10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 10"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 21"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 22"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 23"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 25"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS37"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS38"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS39"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+            <TableRow>
+                <!-- Columna 1 (Texto 1) -->
+                <TextView
+                    android:id="@+id/txtS41"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 1"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#E3F2FD"/>
+                <!-- Columna 2 (Texto 2) -->
+                <TextView
+                    android:id="@+id/txtS42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Texto 2"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:background="#CCCCCC"/>
+                <!-- Columna 3 (Botón 1) -->
+                <ImageButton
+                    android:id="@+id/btnA21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="repMediaPlayer"
+                    android:text="Botón 1"
+                    android:textSize="16sp"
+                    app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            </TableRow>
+        </TableLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEjercioS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/btnejercicios"
+            android:textColor="#000000"
+            android:text="EJERCICIOS" />
+
+    </LinearLayout>
+
+
+</ScrollView>
