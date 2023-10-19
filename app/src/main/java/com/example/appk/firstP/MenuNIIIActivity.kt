@@ -39,7 +39,7 @@ class MenuNIIIActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun navigateToColores(){
-        val intent = Intent(this, casaActivity::class.java)
+        val intent = Intent(this, adjetivosActivity::class.java)
         startActivity(intent)
     }
     private fun navigateToVerbos(){
