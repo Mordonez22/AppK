@@ -35,7 +35,7 @@ class MenuNIIIActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun navigateToDias(){
-        val intent = Intent(this, numerosActivity::class.java)
+        val intent = Intent(this, AdverbiosActivity::class.java)
         startActivity(intent)
     }
     private fun navigateToColores(){

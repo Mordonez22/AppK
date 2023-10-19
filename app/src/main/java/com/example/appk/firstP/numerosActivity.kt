@@ -129,7 +129,7 @@ class numerosActivity : AppCompatActivity() {
         val btnEjercicioS = findViewById<AppCompatButton>(R.id.btnEjercioS)
         btnEjercicioS.setOnClickListener {navigateToEjercioS()}
 
-        mediaPlayer0 = MediaPlayer.create(this, R.raw.novio)
+        mediaPlayer0 = MediaPlayer.create(this, R.raw.cero)
         mediaPlayer1 = MediaPlayer.create(this, R.raw.uno)
         mediaPlayer2 = MediaPlayer.create(this, R.raw.dos)
         mediaPlayer3 = MediaPlayer.create(this, R.raw.tres)

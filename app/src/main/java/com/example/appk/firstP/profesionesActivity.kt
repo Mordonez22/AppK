@@ -147,7 +147,7 @@ class profesionesActivity : AppCompatActivity() {
         mediaPlayer10.release()
     }
     private fun navigateToEjercioS(){
-        val intent = Intent(this, meVerbosActivity::class.java)
+        val intent = Intent(this, meProfesionesActivity::class.java)
         startActivity(intent)
     }
 }

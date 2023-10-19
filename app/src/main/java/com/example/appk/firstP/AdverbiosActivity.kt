@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import com.example.appk.R
 
-class casaActivity : AppCompatActivity() {
+class AdverbiosActivity : AppCompatActivity() {
     private lateinit var mediaPlayer1: MediaPlayer
     private lateinit var mediaPlayer2: MediaPlayer
     private lateinit var mediaPlayer3: MediaPlayer
@@ -18,12 +18,11 @@ class casaActivity : AppCompatActivity() {
     private lateinit var mediaPlayer6: MediaPlayer
     private lateinit var mediaPlayer7: MediaPlayer
     private lateinit var mediaPlayer8: MediaPlayer
-    private lateinit var mediaPlayer9: MediaPlayer
-    private lateinit var mediaPlayer10: MediaPlayer
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_casa)
+        setContentView(R.layout.activity_adverbios)
 
         val titleTextView = findViewById<TextView>(R.id.txtTitulo)
         val text1 = findViewById<TextView>(R.id.txtS1)
@@ -42,49 +41,42 @@ class casaActivity : AppCompatActivity() {
         val text14 = findViewById<TextView>(R.id.txtS14)
         val text15 = findViewById<TextView>(R.id.txtS15)
         val text16 = findViewById<TextView>(R.id.txtS16)
-        val text17 = findViewById<TextView>(R.id.txtS17)
-        val text18 = findViewById<TextView>(R.id.txtS18)
-        val text19 = findViewById<TextView>(R.id.txtS19)
-        val text20 = findViewById<TextView>(R.id.txtS20)
+
 
         // Modificar los textos de los TextViews
-        titleTextView.text = "PARTES DE LA CASA"
-        text1.text = "Casa"
-        text2.text = "  jay"
-        text3.text = "Sala"
-        text4.text = "  nimajay"
-        text5.text = "Pared"
-        text6.text = "  xan"
-        text7.text = "Cocina"
-        text8.text = "  rute’ q’aq’"
-        text9.text = "Comedor"
-        text10.text = "  wayb’äl jay"
-        text11.text = "Dormitorio"
-        text12.text = "  warab’äl"
-        text13.text = "Jardín"
-        text14.text = "  korz’ib’ál"
-        text15.text = "Sanitario"
-        text16.text = "  ruxikin jay"
-        text17.text = "Ducha"
-        text18.text = "  atinib’äl"
-        text19.text = "Entrada"
-        text20.text = "  okib’äl"
+        titleTextView.text = "ADVERBIOS "
+        text1.text = "Ayer"
+        text2.text = "  iwir"
+        text3.text = "Hoy"
+        text4.text = "  wakami"
+        text5.text = "Mañana"
+        text6.text = "  chwa’q"
+        text7.text = "Pasado Mañana"
+        text8.text = "  kab’ij"
+        text9.text = "Anteayer"
+        text10.text = "  kab’ijir kan"
+        text11.text = "Siempre"
+        text12.text = "  jantape’"
+        text13.text = "Rápido"
+        text14.text = "  chanin"
+        text15.text = "Despacio"
+        text16.text = "  eqal’"
+
 
 
         val btnEjercicioS = findViewById<AppCompatButton>(R.id.btnEjercioS)
         btnEjercicioS.setOnClickListener {navigateToEjercioS()}
 
 
-        mediaPlayer1 = MediaPlayer.create(this, R.raw.casa)
-        mediaPlayer2 = MediaPlayer.create(this, R.raw.sala)
-        mediaPlayer3 = MediaPlayer.create(this, R.raw.pared)
-        mediaPlayer4 = MediaPlayer.create(this, R.raw.cocina)
-        mediaPlayer5 = MediaPlayer.create(this, R.raw.comedor)
-        mediaPlayer6 = MediaPlayer.create(this, R.raw.dormi)
-        mediaPlayer7 = MediaPlayer.create(this, R.raw.jardin)
-        mediaPlayer8 = MediaPlayer.create(this, R.raw.sanitario)
-        mediaPlayer9 = MediaPlayer.create(this, R.raw.ducha)
-        mediaPlayer10 = MediaPlayer.create(this, R.raw.entrada)
+        mediaPlayer1 = MediaPlayer.create(this, R.raw.ayer)
+        mediaPlayer2 = MediaPlayer.create(this, R.raw.hoy)
+        mediaPlayer3 = MediaPlayer.create(this, R.raw.manana)
+        mediaPlayer4 = MediaPlayer.create(this, R.raw.pasado)
+        mediaPlayer5 = MediaPlayer.create(this, R.raw.anteayer)
+        mediaPlayer6 = MediaPlayer.create(this, R.raw.siempre)
+        mediaPlayer7 = MediaPlayer.create(this, R.raw.rapido)
+        mediaPlayer8 = MediaPlayer.create(this, R.raw.despacio)
+
 
         val imageButton1: ImageButton = findViewById(R.id.btnA1)
         imageButton1.setOnClickListener {
@@ -118,14 +110,6 @@ class casaActivity : AppCompatActivity() {
         imageButton8.setOnClickListener {
             playSound(mediaPlayer8)
         }
-        val imageButton9: ImageButton = findViewById(R.id.btnA9)
-        imageButton9.setOnClickListener {
-            playSound(mediaPlayer9)
-        }
-        val imageButton10: ImageButton = findViewById(R.id.btnA10)
-        imageButton10.setOnClickListener {
-            playSound(mediaPlayer10)
-        }
     }
     private fun playSound(mediaPlayer: MediaPlayer) {
         if (!mediaPlayer.isPlaying) {
@@ -143,11 +127,9 @@ class casaActivity : AppCompatActivity() {
         mediaPlayer6.release()
         mediaPlayer7.release()
         mediaPlayer8.release()
-        mediaPlayer9.release()
-        mediaPlayer10.release()
     }
     private fun navigateToEjercioS(){
-        val intent = Intent(this, meCasaActivity::class.java)
+        val intent = Intent(this, meAdverbiosActivity::class.java)
         startActivity(intent)
     }
 }
