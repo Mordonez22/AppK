@@ -20,7 +20,7 @@ class meAdjetivosActivity : AppCompatActivity() {
         }
 
         imageView2.setOnClickListener {
-            val intent = Intent(this, auAdverbioActivity::class.java)
+            val intent = Intent(this, auAdjetActivity::class.java)
             startActivity(intent)
         }
     }

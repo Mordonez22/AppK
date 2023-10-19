@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppK"
         tools:targetApi="31">
         <activity
+            android:name=".firstP.auAdjetActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstP.ejAdjeActivity"
             android:exported="false" />
         <activity
