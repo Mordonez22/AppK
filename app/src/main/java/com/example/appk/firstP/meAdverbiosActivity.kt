@@ -15,12 +15,12 @@ class meAdverbiosActivity : AppCompatActivity() {
         val imageView2 = findViewById<View>(R.id.imagen2)
 
         imageView1.setOnClickListener {
-            val intent = Intent(this, ejAnimoActivity::class.java)
+            val intent = Intent(this, ejAdverbioActivity::class.java)
             startActivity(intent)
         }
 
         imageView2.setOnClickListener {
-            val intent = Intent(this, auAnimoActivity::class.java)
+            val intent = Intent(this, auAdverbioActivity::class.java)
             startActivity(intent)
         }
     }
