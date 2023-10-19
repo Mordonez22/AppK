@@ -147,7 +147,7 @@ class adjetivosActivity : AppCompatActivity() {
         mediaPlayer10.release()
     }
     private fun navigateToEjercioS(){
-        val intent = Intent(this, meColoresActivity::class.java)
+        val intent = Intent(this, meAdjetivosActivity::class.java)
         startActivity(intent)
     }
 }
