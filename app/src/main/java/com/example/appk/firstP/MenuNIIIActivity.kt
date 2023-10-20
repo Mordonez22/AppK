@@ -43,7 +43,7 @@ class MenuNIIIActivity : AppCompatActivity() {
         startActivity(intent)
     }
     private fun navigateToVerbos(){
-        val intent = Intent(this, animoActivity::class.java)
+        val intent = Intent(this, numeroIIActivity::class.java)
         startActivity(intent)
     }
 }
