@@ -128,7 +128,7 @@ class numeroIIActivity : AppCompatActivity() {
         mediaPlayer8.release()
     }
     private fun navigateToEjercioS(){
-        val intent = Intent(this, meProfesionesActivity::class.java)
+        val intent = Intent(this, meNumeroIIActivity::class.java)
         startActivity(intent)
     }
 }
