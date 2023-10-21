@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#D7CCC8"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -17,10 +17,24 @@
             android:layout_width="600dp"
             android:layout_height="150dp"
             android:src="@raw/tip"
+
             android:scaleType="centerCrop"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIVEL 1"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="70dp" />
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -31,7 +45,11 @@
         android:textColor="#000000"
         android:layout_margin="15dp"
         android:layout_marginTop="16dp"
-        android:text="Saludos"/>
+        android:text="Saludos"
+        android:drawableLeft="@raw/salud"
+        android:drawablePadding="75dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnPronombres"
@@ -41,7 +59,11 @@
         android:textColor="#000000"
         android:layout_margin="15dp"
         android:layout_marginTop="16dp"
-        android:text="PRONOMBRES PERSONALES"/>
+        android:text="PRONOMBRES PERSONALES"
+        android:drawableLeft="@raw/pronom"
+        android:drawablePadding="75dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDias"
         android:layout_width="match_parent"
@@ -50,7 +72,11 @@
         android:textColor="#000000"
         android:layout_margin="15dp"
         android:layout_height="75dp"
-        android:text="DIAS DE LA SEMANA"/>
+        android:text="DIAS DE LA SEMANA"
+        android:drawableLeft="@raw/dsem"
+        android:drawablePadding="75dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnColores"
         android:layout_width="match_parent"
@@ -59,7 +85,11 @@
         android:layout_marginTop="16dp"
         android:layout_margin="15dp"
         android:background="@drawable/btn1"
-        android:text="COLORES"/>
+        android:text="COLORES"
+        android:drawableLeft="@raw/clr"
+        android:drawablePadding="75dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnVerbos"
         android:layout_width="match_parent"
@@ -68,6 +98,10 @@
         android:layout_margin="15dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn1"
-        android:text="VERBOS"/>
+        android:text="VERBOS"
+        android:drawableLeft="@raw/ve"
+        android:drawablePadding="75dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical"/>
 
 </LinearLayout>

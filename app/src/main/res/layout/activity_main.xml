@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#D7CCC8"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -36,32 +36,35 @@
             android:layout_marginTop="80dp" />
     </RelativeLayout>
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnNivel1"
+        android:id="@+id/imagen1"
         android:text="NIVEL 1"
-        android:layout_marginTop="40dp"
+        android:src="@raw/nv"
+        android:layout_marginTop="16dp"
         android:layout_marginLeft="110dp"
-        android:background="@drawable/boton_r"></Button>
+        android:background="@drawable/boton_r"/>
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnNivel2"
+        android:id="@+id/imagen2"
         android:text="NIVEL 2"
+        android:src="@raw/nvii"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="110dp"
-        android:background="@drawable/boton_r"></Button>
+        android:background="@drawable/boton_r"/>
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnNivel3"
+        android:id="@+id/imagen3"
         android:text="NIVEL 3"
+        android:src="@raw/nviii"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="110dp"
-        android:background="@drawable/boton_r"></Button>
+        android:background="@drawable/boton_r"/>
 
 
 </LinearLayout>
